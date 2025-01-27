@@ -11,8 +11,6 @@ def extract(path):
         path : lokasi file yang akan diekstrak
     return:
         data : dataframe spark
-    contoh penggunaan:
-        load_data("/Users/afifmakruf/Desktop/Hacktiv8/RMT-002/Repo/airflow-with-spark/dags/")
     '''
 
     # Membuat spark engine

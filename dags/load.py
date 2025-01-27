@@ -30,5 +30,5 @@ def load(data):
     client.close()
 
 if __name__ == "__main__":
-    df = pd.read_csv(f'{path}/P2M3_afif_makruf_data_cleaned.csv')
+    df = pd.read_csv(f'{path}/data_cleaned.csv')
     load(df)
