@@ -1,0 +1,147 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "expectation-merch-dataset",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "order_id"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "buyer_age",
+        "type_list": [
+          "FLOAT",
+          "INT"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "sales_price",
+        "type_list": [
+          "FLOAT",
+          "INT"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "shipping_charges",
+        "type_list": [
+          "FLOAT",
+          "INT"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "sales_per_unit",
+        "type_list": [
+          "FLOAT",
+          "INT"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "quantity",
+        "type_list": [
+          "FLOAT",
+          "INT"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "total_sales",
+        "type_list": [
+          "FLOAT",
+          "INT"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "rating",
+        "type_list": [
+          "FLOAT",
+          "INT"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "total_sales"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "product_category",
+        "value_set": [
+          "Clothing",
+          "Other",
+          "Ornaments"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_pair_values_a_to_be_greater_than_b",
+      "kwargs": {
+        "column_A": "total_sales",
+        "column_B": "sales_price",
+        "or_equal": true
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "rating",
+        "max_value": 5,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_strftime_format",
+      "kwargs": {
+        "column": "order_date",
+        "strftime_format": "%Y-%m-%d"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex",
+      "kwargs": {
+        "column": "product_id",
+        "regex": "^BF.*"
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.18.19"
+  }
+}
