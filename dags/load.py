@@ -12,7 +12,7 @@ def load(data):
         data_cleaned : dataframe hasil transform (cleaning) yang dikonversi menjadi pandas dataframe 
     '''
     # Membuat koneksi ke MongoDB
-    mongodb_uri = 'mongodb+srv://afifmakruf:afifmakruf@afif-playground.cj4fn.mongodb.net/'
+    mongodb_uri = 'mongodb+srv://<username>:<password>@afif-playground.cj4fn.mongodb.net/'
     client = MongoClient(mongodb_uri)
     db = client['merch_sales']
     collection = db['etl_pipeline']
