@@ -1,4 +1,4 @@
-# ETL Pipeline Walmart Product
+# ETL Pipeline Influencer Merchandise Trends
 
 ## Description
 This project is used to automate the Extract, Transform, Load (ETL) process using Apache Airflow. The project runs three separate nodes to extract, transform, and load Influencer Merch Trends data. This process is scheduled to run every Saturday between 09:10 and 09:30 with a 10-minute interval.
